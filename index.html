@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Agenda Telefônica</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/phone-call.png" alt="phone">
+            <h1>Agenda Telefônica</h1>
+        </header>
+        <form id="form-contact">
+            <input type="text" required placeholder="Nome do Contato" minlength="3" id="contact-name">
+            <input type="tel" required placeholder="(xx)xxxxx-xxxx" id="contact-number" minlength="11" maxlength="19">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="10">
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Número do Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Quantidade de Contatos</td>
+                    <td id="count-final">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
